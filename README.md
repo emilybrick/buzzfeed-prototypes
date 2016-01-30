@@ -1,1 +1,2 @@
-# buzzfeed-prototypes
+
+see gh-pages branch
