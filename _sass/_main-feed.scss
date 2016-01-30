@@ -1,0 +1,165 @@
+/* Card Specific */
+
+.card-avatar {
+  top: -5px;
+}
+
+.card-avatar__img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.card-avatar__caret {
+  top: 3px;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.small-card {
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px 0 0 2px;
+}
+
+.share--package {
+  top: -3px;
+}
+
+.share-icon {
+  top: 2px;
+}
+
+.play-button {
+  background: rgba(235, 38, 73, .8);
+  bottom: .5rem;
+  height: 2.5rem;
+  right: .5rem;
+  text-align: center;
+  width: 2.5rem;
+}
+
+.play-button .ss-directright {
+  line-height: 44px;
+}
+
+.play-button--small{
+  background: rgba(235, 38, 73, .8);
+  height: 1.25rem;
+  text-align: center;
+  width: 1.25rem;
+}
+
+.play-button--small .ss-directright {
+  line-height: 24px !important;
+}
+
+/* Ad CSS */
+
+.ad-unit__avatar {
+  height: 2rem;
+  width: 2rem;
+}
+
+.ad-unit__text {
+  margin-left: 2.5rem;
+  top: 1px;
+}
+
+/* Bundles */
+
+.bundle-header__more {
+  top: 1.3rem;
+}
+
+.bundle-header--blue {
+  color: #07e;
+  border-top: 8px solid #07e;
+  border-top-left-radius: 3px;
+}
+
+.bundle-header--green {
+  border-top: 8px solid #6fb824;
+  border-top-left-radius: 3px;
+}
+
+.bundle-header--green a {
+  color: #6fb824;
+}
+
+.bundle-header--green a:hover {
+  color: #4e8218;
+}
+
+.bundle-header--purple {
+  border-top: 8px solid #954BD7;
+  border-top-left-radius: 3px;
+}
+
+.bundle-header--purple a {
+  color: #954BD7;
+}
+
+.bundle-header--purple a:hover {
+  color: #7039A2;
+}
+
+.bundle-photo--small {
+  max-height: 110px;
+  overflow: hidden;
+}
+
+/* Misc */
+
+.more__caret {
+  top: 1px;
+}
+
+.text-7 {
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+}
+
+.trending-icon {
+  width: 14px;
+  height: 14px;
+}
+
+/* Play Button */
+
+.play-icon {
+  width:40px;
+  height:40px;
+  background-color: rgba(255, 37, 78, 0.75);
+  border-radius:50%;
+  position:relative;
+}
+
+.play {
+  display:block;
+  position:relative;
+	width: 0;
+	height: 0;
+  top:50%;
+  left:50%;
+  margin-top:-9px;
+  margin-left:-4px;
+	border-top: 8px solid transparent;
+	border-left: 12px solid rgba(255,255,255,1);
+	border-bottom: 8px solid transparent;
+}
+
+
+
