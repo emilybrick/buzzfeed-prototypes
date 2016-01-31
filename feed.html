@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<!-- The HP right rail modules disappear by sliding behind the main column of content and the vertical subnav reveals by sliding out of the left of the main col  -->
+
 <div class="content-width xs-mx-auto xs-my3 gutters clearfix">
 
 	<div class="js-left-col col xs-col-2">
@@ -39,8 +41,19 @@ layout: default
 		prevHash = hash;
 	}
 
+	function onLoad() {
+		var hash = window.location.hash;
+
+		if (hash === '#video') {
+			$(".js-right-col").css({display:'none'});
+			$(".js-left-col").css({opacity: 1});
+		} else {
+			$(".js-right-col").css({display: 'block'});
+			$(".js-left-col").css({opacity: 0});
+		}
+	}
 
 
-	onChangeHash();
+	onLoad();
 	window.onhashchange = onChangeHash;
 </script>
