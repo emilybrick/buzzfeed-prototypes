@@ -11,7 +11,7 @@ layout: default
 	<div class="js-left-col col xs-col-3 xs-absolute xs-r0">
 		{% include left-col.html %}
 	</div>
-	<div class="js-right-col col xs-col-3">
+	<div class="js-right-col col xs-col-3 right-col-hide">
 		<div>{% include right-col.html %}</div>
 	</div>
 
@@ -22,7 +22,7 @@ layout: default
 <script>
 
 	var prevHash;
-	function onChangeHash() {
+	function onChangeHash(immediate) {
 		var ms = 150;
 		var hash = window.location.hash;
 
@@ -32,19 +32,31 @@ layout: default
 				}, {
 					duration: ms,
 					complete: function() {
-						$(".js-right-col").velocity({opacity: 0}, {duration: ms });
+						$(".js-right-col").velocity('transition.fadeOut', {duration: ms});
 					}
 				});
 		} else if (prevHash === '#video') {
 			$(".js-right-col .card-border").velocity("reverse");
-			$(".js-right-col").velocity("reverse");
+			$(".js-right-col").velocity('transition.fadeIn', {duration: ms});
 		}
 
 		prevHash = hash;
 	}
 
 
+	function onLoad(immediate) {
+		var ms = 150;
+		var hash = window.location.hash;
 
-	onChangeHash();
+		if (hash === '#video') {
+			$(".js-right-col").css({display:'none'});
+		} else {
+			$(".js-right-col").css({display: 'block'});
+			$(".js-right-col").velocity("reverse");
+		}
+	}
+
+
+	onLoad();
 	window.onhashchange = onChangeHash;
 </script>
