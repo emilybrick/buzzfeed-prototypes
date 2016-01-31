@@ -2,16 +2,15 @@
 layout: default
 ---
 
-<div class="content-width xs-mx-auto xs-my3 gutters clearfix">
+<div class="content-width xs-mx-auto xs-my3 gutters xs-relative clearfix">
 
-	<div class="js-left-col col xs-col-2">
-		{% include left-col.html %}
-	</div>
-
-	<div class="col xs-col-7 clearfix">
+	<div class="col xs-col-9 clearfix">
 		{% include main-col.html %}
 	</div>
 
+	<div class="js-left-col col xs-col-3 xs-absolute xs-r0">
+		{% include left-col.html %}
+	</div>
 	<div class="js-right-col col xs-col-3">
 		<div>{% include right-col.html %}</div>
 	</div>
