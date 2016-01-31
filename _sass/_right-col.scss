@@ -1,0 +1,46 @@
+/* Right Rail Modules */
+
+.news-header--red {
+  border-top: 8px solid #ee3322;
+}
+
+.trending-header--pink {
+  border-top: 8px solid #eb2649;
+  color: #eb2649;
+}
+
+.promoted-header--orange {
+  border-top: 8px solid #f49c1a;
+  color: #f49c1a;
+}
+
+.latest-buzz-header--blue {
+  color: #07e;
+  border-top: 8px solid #07e;
+}
+
+.trending-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.text-pink {
+  color: #eb2649;
+}
+
+.trending-header--purple {
+  border-top: 8px solid #954BD7;
+  color: #954BD7;
+}
+
+/* Stick the Ads */
+
+#sticky.stick {
+  position: fixed;
+  top: 1rem;
+  width: 296px !important;
+}
+
+.vertical-subnav {
+	background-color: rgba(254, 255, 219, 0.95)
+}

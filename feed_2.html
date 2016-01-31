@@ -9,11 +9,11 @@ layout: default
 	</div>
 
 	<div class="col xs-col-7 clearfix">
-		{% include main-col--wide.html %}
+		{% include main-col.html %}
 	</div>
 
 	<div class="js-right-col col xs-col-3">
-		{% include right-col.html %}
+		<div>{% include right-col.html %}</div>
 	</div>
 
 
@@ -28,12 +28,17 @@ layout: default
 		var hash = window.location.hash;
 
 		if (hash === '#video') {
-			$(".js-right-col .card-border").velocity("transition.slideLeftOut", {duration: ms, stagger: 50, display: 'block'});
-			$(".js-left-col").velocity("transition.slideRightIn", {duration: ms, display: 'block'});
-
+			$(".js-right-col .card-border").velocity({
+					height: 0
+				}, {
+					duration: ms,
+					complete: function() {
+						$(".js-right-col").velocity({opacity: 0}, {duration: ms });
+					}
+				});
 		} else if (prevHash === '#video') {
-			$(".js-right-col .card-border").velocity("transition.slideLeftIn", {duration: ms, stagger: 50, display: 'block'});
-			$(".js-left-col").velocity("transition.slideRightOut", {duration: ms, display: 'block'});
+			$(".js-right-col .card-border").velocity("reverse");
+			$(".js-right-col").velocity("reverse");
 		}
 
 		prevHash = hash;

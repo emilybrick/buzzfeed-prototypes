@@ -5,7 +5,7 @@
 
 
 // Width of the content area
-$content-width: 80rem;
+$content-width: 78rem;
 
 // Background color of the content area
 $background-color: #fafafa;
@@ -31,5 +31,8 @@ $background-color: #fafafa;
 @import
         "base",
         "header",
-        "main-feed"
+        "main-feed",
+        "right-col"
+
+
 

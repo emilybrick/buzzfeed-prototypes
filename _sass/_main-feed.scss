@@ -1,5 +1,9 @@
 /* Card Specific */
 
+.card-border {
+	overflow: hidden;
+}
+
 .card-avatar {
   top: -5px;
 }
@@ -140,25 +144,37 @@
 /* Play Button */
 
 .play-icon {
-  width:40px;
-  height:40px;
+  width: 40px;
+  height: 40px;
   background-color: rgba(255, 37, 78, 0.75);
-  border-radius:50%;
-  position:relative;
+  border-radius: 50%;
+  position:r elative;
+  &--small {
+		width: 20px;
+		height: 20px;
+  }
 }
+
 
 .play {
   display:block;
   position:relative;
 	width: 0;
 	height: 0;
-  top:50%;
-  left:50%;
-  margin-top:-9px;
-  margin-left:-4px;
+  top: 50%;
+  left: 50%;
+  margin-top: -9px;
+  margin-left: -4px;
 	border-top: 8px solid transparent;
 	border-left: 12px solid rgba(255,255,255,1);
 	border-bottom: 8px solid transparent;
+	&--small {
+		  margin-top: -5px;
+		  margin-left: -3px;
+			border-top: 4px solid transparent;
+			border-left: 7px solid rgba(255,255,255,1);
+			border-bottom: 4px solid transparent;
+	}
 }
 
 

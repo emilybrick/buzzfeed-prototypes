@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="content-width xs-relative xs-mx-auto xs-my3 gutters clearfix">
+
+	<div class="col xs-col-9 clearfix">
+		{% include main-col.html %}
+	</div>
+
+	<div class="col xs-col-3 xs-relative">
+		<div class="js-top-col xs-absolute xs-r0 xs-col-12">
+			{% include left-col.html %}
+		</div>
+
+		<div class="js-bottom-col">
+			<div>{% include right-col.html %}</div>
+		</div>
+	</div>
+
+</div>
+
+
+<script>
+
+	var prevHash;
+	function onChangeHash() {
+		var ms = 150;
+		var hash = window.location.hash;
+
+		if (hash === '#video') {
+			$(".js-bottom-col .card-border").velocity("transition.slideDownOut", {duration: ms, stagger: 50 });
+			$(".js-top-col").velocity("transition.slideDownIn", {duration: ms});
+		} else if (prevHash === '#video') {
+			$(".js-bottom-col .card-border").velocity("transition.slideUpIn", {duration: ms, stagger: 50 });
+			$(".js-top-col").velocity("transition.slideUpOut", {duration: ms });
+		} else {
+			if ($(".js-top-col:visible")) {
+				$(".js-top-col").css({display: 'none'});
+			};
+		}
+
+		prevHash = hash;
+	}
+
+
+
+	onChangeHash();
+	window.onhashchange = onChangeHash;
+</script>
