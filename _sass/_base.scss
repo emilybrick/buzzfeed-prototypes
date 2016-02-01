@@ -17,8 +17,31 @@ body {
 	background-color: $background-color;
 }
 
+
+//body js
+
 .content-width{
 	width: $content-width;
 }
 
+.body-overlay {
+	background-color: rgba(255, 255, 255, 0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: none;
+}
+
+.peepster-open {
+	overflow: hidden;
+	.body-overlay {
+		display: block;
+	}
+}
+
+.peepster-box-shadow {
+	box-shadow: 4px 4.5px 5px 2.5px rgba(66, 66, 66, 0.58);
+}
 

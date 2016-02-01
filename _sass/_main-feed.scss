@@ -38,6 +38,11 @@
   border-radius: 2px 0 0 2px;
 }
 
+.bundle-thumb--short {
+	height: 125px;
+	overflow: hidden;
+}
+
 .share--package {
   top: -3px;
 }
@@ -177,5 +182,7 @@
 	}
 }
 
-
+.peepster {
+	transform: translateX(100%);
+}
 

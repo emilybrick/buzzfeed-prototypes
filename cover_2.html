@@ -1,0 +1,161 @@
+---
+layout: default-headless
+---
+
+<!--Thanksgiving Hack Cover-->
+
+<!--Cover Header Image and Avatar-->
+
+<div class="xs-relative cover-header">
+  <img class="xs-absolute rounded cover-avatar" src="images/thanksgiving-avatar.jpg" />
+</div>
+
+<!--Page Title and Description-->
+
+<h1 class="xs-text-center bold xs-mb2">Thanksgiving Hacks</h1>
+<p class="xs-col-11 sm-col-8 md-col-5 xs-mx-auto xs-mb3 sm-mb5 xs-text-center">Thanksgiving hacks that'll make you close your eyes, lean back and whisper "yesssss." Snack-sized videos and recipes you'll want to try.</p>
+
+<!--Social Links on Mobile-->
+
+<div class="xs-mb4 xs-text-center sm-hide text-2">
+  <a class="link-vine xs-mr3" href="#"><span class="ss-vine"></span></a>
+  <a class="link-facebook xs-mr3" href="#"><span class="ss-facebook"></span></a>
+  <a class="link-instagram xs-mr3" href="#"><span class="ss-instagram"></span></a>
+  <a class="link-twitter" href="#"><span class="ss-twitter"></span></a>
+</div>
+
+<!--Content Wrapper-->
+
+<div class="clearfix xs-mx-auto xs-col-12 xs-p1 sm-col-10 sm-p0">
+
+  <!--Card Column-->
+
+  <div class="col xs-col-12 sm-col-8 sm-offset-1 md-col-6 md-offset-3">
+
+    <!--Big Card-->
+
+    <div class="xs-mb2 xs-border rounded fill-white">
+
+      <div class="xs-p2">
+        <a href="#"><img class="xs-float-right xs-relative rounded card-avatar" src="images/tasty.jpg" /></a>
+        <h2 class="bold"><a class="link-gray" href="#">This Is The Easiest Way To Make Vegan Fettuccine Alfredo</a></h2>
+      </div>
+
+      <img src="images/vine.png" style="width:100%;">
+
+      <div class="xs-p2 clearfix">
+        <p class="xs-float-left text-gray--lighter">2,092,083 Views</p>
+        <a class="xs-float-right" href="#">Share</a>
+      </div>
+
+    </div>
+
+    <!--Small Card-->
+
+    <div class="xs-relative xs-mb2 xs-border rounded fill-white">
+
+      <a href="#" class="xs-absolute xs-t0 xs-b0 xs-l0 xs-col-3 small-card-image small-card-image--one">
+      </a>
+
+      <div class="xs-col-9 xs-offset-3 xs-p2">
+        <h2 class="xs-mb1 text-4 bold"><a class="link-gray" href="#">These Mini Peanut Butter Cheesecakes Are The Epitome Of Food Porn</a></h2>
+        <p class="text-5 text-gray--lightest">Sweet and salty at the same damn time.</p>
+      </div>
+
+    </div>
+
+    <!--Small Card-->
+
+    <div class="xs-relative xs-mb2 xs-border rounded fill-white">
+
+      <a href="#" class="xs-absolute xs-t0 xs-b0 xs-l0 xs-col-3 small-card-image small-card-image--three">
+      </a>
+
+      <div class="xs-col-9 xs-offset-3 xs-p2">
+        <h2 class="xs-mb1 text-4 bold"><a class="link-gray" href="#">This Cheesy Mashed Cauliflower Is What Heaven Looks Like</a></h2>
+        <p class="text-5 text-gray--lightest">Absolutely divine.</p>
+      </div>
+
+    </div>
+
+    <!--Small Card-->
+
+    <div class="xs-relative xs-mb2 xs-border rounded fill-white">
+
+     <a href="#" class="xs-absolute xs-t0 xs-b0 xs-l0 xs-col-3 small-card-image small-card-image--two">
+     </a>
+
+      <div class="xs-col-9 xs-offset-3 xs-p2">
+        <h2 class="xs-mb1 text-4 bold"><a class="link-gray" href="#">The One Way You Should Be Using Nutella</a></h2>
+        <p class="text-5 text-gray--lightest">Nutella + anything = LIFE!</p>
+      </div>
+
+    </div>
+
+    <!--Big Card-->
+
+    <div class="xs-mb2 xs-border rounded fill-white">
+
+      <div class="xs-p2">
+        <a href="#"><img class="xs-float-right xs-relative rounded card-avatar" src="images/tasty.jpg" /></a>
+        <h2 class="bold"><a class="link-gray" href="#">Tomato Soup Bread Bowl</a></h2>
+      </div>
+
+      <img src="images/vine.png" style="width:100%;">
+
+      <div class="xs-p2 clearfix">
+        <p class="xs-float-left text-gray--lighter">2,092,083 Views</p>
+        <a class="xs-float-right" href="#">Share</a>
+      </div>
+
+    </div>
+
+
+  <!--End of Card Column-->
+
+  </div>
+
+
+  <div id="sticky-anchor"></div>
+  <!--END OF STICKY SNIPPET-->
+
+  <!--Social Above the xs Breakpoint-->
+
+  <div id="sticky" class="col sm-col-3 xs-hide sm-block xs-pl3">
+    <h3 class="xs-mb1 bold">Follow Tasty</h3>
+
+    <ul class="list-unstyled bold">
+      <li class="xs-mb1"><a class="link-vine" href="#"><span class="social-icon ss-vine"></span> Vine</a></li>
+      <li class="xs-mb1"><a class="link-facebook" href="#"><span class="social-icon ss-facebook"></span> Facebook</a></li>
+      <li class="xs-mb1"><a class="link-instagram" href="#"><span class="social-icon ss-instagram"></span> Instagram</a></li>
+      <li class="xs-mb1"><a class="link-twitter" href="#"><span class="social-icon ss-twitter"></span> Twitter</a></li>
+    </ul>
+
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  function sticky_relocate() {
+    var window_top = $(window).scrollTop();
+    var div_top = $('#sticky-anchor').offset().top;
+    if (window_top > div_top) {
+        $('#sticky').addClass('stick');
+    } else {
+        $('#sticky').removeClass('stick');
+    }
+}
+
+$(function () {
+    $(window).scroll(sticky_relocate);
+    sticky_relocate();
+});
+</script>
+
+
+
+
+
+
+
+

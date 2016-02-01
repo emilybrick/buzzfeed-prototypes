@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<!-- HP that links to a cover  -->
+
+<div class="content-width xs-mx-auto xs-my3 clearfix">
+
+	<div class="col xs-col-9 xs-pr5 clearfix">
+		{% include main-col-collection-top.html %}
+	</div>
+
+	<div class="col xs-col-3">
+		{% include right-col.html %}
+	</div>
+
+</div>
+<div class="body-overlay"></div>
+<div class="js-peepster peepster peepster-box-shadow xs-col-6 clearfix xs-fixed xs-r0 xs-t0 xs-b0 fill-white xs-overflow-scroll">
+	<div class="xs-z1 fill-white">
+		{% include cover.html %}
+	</div>
+</div>
+
+<script>
+
+var $peepster = $(".js-peepster");
+var $body = $("body");
+var peepsterOpenClass = "peepster-open";
+var $bodyOverlay = $(".body-overlay");
+
+var prevHash;
+function onChangeHash() {
+	var hash = window.location.hash;
+
+	if (hash === '#peepster') {
+		$peepster.velocity({translateX: 0});
+		$body.addClass(peepsterOpenClass);
+
+	} else {
+		$peepster.velocity({translateX: "100%"});
+		$body.removeClass(peepsterOpenClass);
+	}
+}
+
+window.onhashchange=onChangeHash;
+
+$bodyOverlay.on("click", function() {
+	document.location.hash="";
+});
+
+</script>
+
+
