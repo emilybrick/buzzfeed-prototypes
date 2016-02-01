@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<!-- Same as Feed 3, but with a transparent subnav -->
+
+<!-- HP right rail modules slide down & out as the vertical subnav slides down and in, both in the right column -->
 
 <div class="content-width xs-relative xs-mx-auto xs-my3 gutters clearfix">
 
@@ -9,17 +10,14 @@ layout: default
 		{% include main-col.html %}
 	</div>
 
-	<div class="col xs-col-3 xs-absolute xs-r0">
-		<div class="js-top-col">
-			{% include left-col.html %}
+	<div class="col xs-col-3 xs-relative">
+		<div class="js-top-col xs-absolute xs-r0 xs-col-12">
+			{% include left-col-transparent.html %}
 		</div>
-		<div class="js-mid-col">
-			{% include trending-video-module.html %}
-		</div>
-	</div>
 
-	<div class="col xs-col-3 js-bottom-col">
-		<div>{% include right-col.html %}</div>
+		<div class="js-bottom-col">
+			<div>{% include right-col.html %}</div>
+		</div>
 	</div>
 
 </div>
@@ -35,15 +33,12 @@ layout: default
 		if (hash === '#video') {
 			$(".js-bottom-col .card-border").velocity("transition.slideDownOut", {duration: ms, stagger: 50 });
 			$(".js-top-col").velocity("transition.slideDownIn", {duration: ms});
-			$(".js-mid-col").velocity("transition.slideUpIn", {duration: ms});
 		} else if (prevHash === '#video') {
 			$(".js-bottom-col .card-border").velocity("transition.slideUpIn", {duration: ms, stagger: 50 });
 			$(".js-top-col").velocity("transition.slideUpOut", {duration: ms });
-			$(".js-mid-col").velocity("transition.slideDownOut", {duration: ms});
 		} else {
 			if ($(".js-top-col:visible")) {
 				$(".js-top-col").css({display: 'none'});
-				$(".js-mid-col").css({display: 'none'});
 			};
 		}
 
