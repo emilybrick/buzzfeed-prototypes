@@ -1,0 +1,84 @@
+.cover {
+  background: #f9f9f9;
+}
+
+.cover-header {
+  background: url(../images/cover-header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 12rem;
+  margin-bottom: 3.5rem;
+}
+
+.cover-avatar {
+  border: 3px solid #fff;
+  bottom: -40px;
+  height: 120px;
+  left: 50%;
+  margin-left: -60px;
+  width: 120px;
+}
+
+.card-avatar {
+  height: 35px;
+  top: -5px;
+  width: 35px;
+}
+
+.small-card-image {
+	&--one{
+		background: url(../images/pb-cheesecake.jpg);
+		background-position: center;
+		background-size: cover;
+	}
+	&--two{
+		background: url(../images/chicken-alfredo.jpg);
+		background-position: center;
+		background-size: cover;
+	}
+	&--three{
+		background: url(../images/mashed-cauliflower.jpg);
+		background-position: center;
+		background-size: cover;
+	}
+}
+
+/* Social Links */
+
+.link-vine {
+  color: #00a478;
+}
+
+.link-vine:hover {
+  color: #008e68;
+}
+
+.link-facebook {
+  color: #3b5998;
+}
+
+.link-facebook:hover {
+  color: #2f477a;
+}
+
+.link-instagram {
+  color: #125688;
+}
+
+.link-instagram:hover {
+  color: #0b385a;
+}
+
+.link-twitter {
+  color: #4099ff;
+}
+
+.link-twitter:hover {
+  color: #327acb;
+}
+
+.social-icon {
+  position: relative;
+  margin-right: .25rem;
+  top:2px;
+}
