@@ -34,6 +34,8 @@ body {
 	display: none;
 }
 
+
+// JS classes for the page drawer slide-out
 .peepster-open {
 	overflow: hidden;
 	.body-overlay {
@@ -43,5 +45,11 @@ body {
 
 .peepster-box-shadow {
 	box-shadow: 4px 4.5px 5px 2.5px rgba(66, 66, 66, 0.58);
+}
+
+// Shitty line-height reset bc wtf
+
+.line-height--reset {
+	line-height: 1.2 !important;
 }
 
