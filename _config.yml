@@ -8,8 +8,7 @@
 # Site settings
 title: BuzzFeed
 email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology.
+description: BuzzFeed is the social news and entertainment company. BuzzFeed is redefining online advertising with its social, content-driven publishing technology.
 baseurl: "/buzzfeed-prototypes" # the subpath of your site, e.g. /blog
 url: "http://emilybrick.me" # the base hostname & protocol for your site
 twitter_username: jekyllrb
