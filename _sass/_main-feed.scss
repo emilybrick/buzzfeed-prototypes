@@ -48,7 +48,16 @@
 }
 
 .share-icon {
-  top: 2px;
+  top: 4px;
+}
+
+.share-icon {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.view-count {
+	top: 7px;
 }
 
 .play-button {
@@ -186,12 +195,13 @@
 	transform: translateX(100%);
 }
 
-.share-icon {
-	width: 1.1rem;
-	height: 1.1rem;
-}
-
 // images are getting a weird extra height can we solve this? being used in main-col--news.html
 .inherit {
 	display: inherit;
+}
+
+
+.wide-thumb {
+	max-height: 230px;
+	overflow: hidden;
 }
