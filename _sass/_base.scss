@@ -21,7 +21,7 @@ body {
 //body js
 
 .content-width{
-	width: $content-width;
+	max-width: $content-width;
 }
 
 .body-overlay {
