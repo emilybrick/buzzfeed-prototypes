@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<div class="content-width xs-relative xs-mx-auto xs-my3 gutters clearfix">
+
+	<!-- Vertical subnav slides down and in as the trending module becomes the vertical's trending module, and slides up to meet the subnav (the rest of the HP right rail modules slide out-->
+
+	<div class="col xs-col-9 clearfix">
+		{% include main-col--breaking.html %}
+	</div>
+
+	<div class="col xs-col-3 xs-absolute xs-r0">
+		<div class="js-top-col">
+			{% include left-col.html %}
+		</div>
+		<div class="js-mid-col">
+			{% include trending-video-module.html %}
+		</div>
+	</div>
+
+	<div class="col xs-col-3 js-bottom-col">
+		<div>{% include right-col--news.html %}</div>
+	</div>
+
+</div>
+
+
+<script>
+
+	var prevHash;
+	function onChangeHash() {
+		var ms = 150;
+		var hash = window.location.hash;
+
+		if (hash === '#video') {
+			$(".js-bottom-col .card-border").velocity("transition.slideDownOut", {duration: ms, stagger: 50 });
+			$(".js-top-col").velocity("transition.slideDownIn", {duration: ms});
+			$(".js-mid-col").velocity("transition.slideUpIn", {duration: ms});
+		} else if (prevHash === '#video') {
+			$(".js-bottom-col .card-border").velocity("transition.slideUpIn", {duration: ms, stagger: 50 });
+			$(".js-top-col").velocity("transition.slideUpOut", {duration: ms });
+			$(".js-mid-col").velocity("transition.slideDownOut", {duration: ms});
+		} else {
+			if ($(".js-top-col:visible")) {
+				$(".js-top-col").css({display: 'none'});
+				$(".js-mid-col").css({display: 'none'});
+			};
+		}
+
+		prevHash = hash;
+	}
+
+
+
+	onChangeHash();
+	window.onhashchange = onChangeHash;
+</script>
