@@ -1,8 +1,11 @@
-.header__links {
-	top: 4px;
-}
 .header__logo {
 	height: 1.625rem;
+	position: relative;
+	top: 3px;
+}
+
+.header__links {
+	top: 4px;
 }
 
 .box-shadow--bottom {
@@ -14,4 +17,11 @@
 	&.nav {
 		min-height: 0px;
 	}
+}
+
+.more-caret {
+	width: .65rem;
+	height: .6rem;
+	fill: #07e;
+	margin-left: .2rem;
 }
