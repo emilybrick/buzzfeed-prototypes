@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<!-- News Focused: HP right rail modules slide down & out as the vertical subnav slides down and in, both in the right column -->
+
+<div class="content-width--smaller xs-relative xs-mx-auto xs-my3 clearfix">
+
+	<div class="col xs-col-9 xs-pr4 clearfix">
+		{% include main-col--testing.html %}
+	</div>
+
+	<div class="col xs-col-3">
+		{% include right-col--testing.html %}
+	</div>
+
+</div>
+
+
+<script>
+
+	var prevHash;
+	function onChangeHash() {
+		var ms = 150;
+		var hash = window.location.hash;
+
+		if (hash === '#video') {
+			$(".js-bottom-col .card-border").velocity("transition.slideDownOut", {duration: ms, stagger: 50 });
+			$(".js-top-col").velocity("transition.slideDownIn", {duration: ms});
+		} else if (prevHash === '#video') {
+			$(".js-bottom-col .card-border").velocity("transition.slideUpIn", {duration: ms, stagger: 50 });
+			$(".js-top-col").velocity("transition.slideUpOut", {duration: ms });
+		} else {
+			if ($(".js-top-col:visible")) {
+				$(".js-top-col").css({display: 'none'});
+			};
+		}
+
+		prevHash = hash;
+	}
+
+
+
+	onChangeHash();
+	window.onhashchange = onChangeHash;
+</script>

@@ -20,8 +20,11 @@ body {
 
 //body js
 
-.content-width{
+.content-width {
 	max-width: $content-width;
+	&--smaller {
+		max-width: ($content-width)-10rem;
+	}
 }
 
 .body-overlay {
