@@ -15,32 +15,3 @@ layout: default-smaller
 	</div>
 
 </div>
-
-
-<script>
-
-	var prevHash;
-	function onChangeHash() {
-		var ms = 150;
-		var hash = window.location.hash;
-
-		if (hash === '#video') {
-			$(".js-bottom-col .card-border").velocity("transition.slideDownOut", {duration: ms, stagger: 50 });
-			$(".js-top-col").velocity("transition.slideDownIn", {duration: ms});
-		} else if (prevHash === '#video') {
-			$(".js-bottom-col .card-border").velocity("transition.slideUpIn", {duration: ms, stagger: 50 });
-			$(".js-top-col").velocity("transition.slideUpOut", {duration: ms });
-		} else {
-			if ($(".js-top-col:visible")) {
-				$(".js-top-col").css({display: 'none'});
-			};
-		}
-
-		prevHash = hash;
-	}
-
-
-
-	onChangeHash();
-	window.onhashchange = onChangeHash;
-</script>
