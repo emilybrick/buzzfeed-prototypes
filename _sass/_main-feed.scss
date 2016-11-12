@@ -38,18 +38,6 @@
 	overflow: hidden;
 }
 
-.share--package {
-  top: -3px;
-}
-
-.share-icon {
-  top: 4px;
-}
-
-.share-icon {
-	width: 1.25rem;
-	height: 1.25rem;
-}
 
 .view-count {
 	top: 4px;
@@ -73,6 +61,7 @@
   height: 1.25rem;
   text-align: center;
   width: 1.25rem;
+
 }
 
 .play-button--small .ss-directright {
@@ -161,6 +150,8 @@
   &--small {
 		width: 20px;
 		height: 20px;
+    bottom: 2px;
+    position: relative;
   }
 }
 
@@ -178,8 +169,8 @@
 	border-left: 12px solid rgba(255,255,255,1);
 	border-bottom: 8px solid transparent;
 	&--small {
-		  margin-top: -5px;
-		  margin-left: -3px;
+      margin-top: -4px;
+      margin-left: -2px;
 			border-top: 4px solid transparent;
 			border-left: 7px solid rgba(255,255,255,1);
 			border-bottom: 4px solid transparent;
