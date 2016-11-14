@@ -23,7 +23,7 @@ body {
 .content-width {
 	max-width: $content-width;
 	&--smaller {
-		max-width: ($content-width)-8rem;
+		max-width: ($content-width)-10rem;
 	}
 }
 

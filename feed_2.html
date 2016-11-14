@@ -4,18 +4,21 @@ layout: default
 
 <!-- right rail module cards (for HP) collapse to reveal the vertical's subnav beneath -->
 
-<div class="content-width xs-mx-auto xs-my3 gutters xs-relative clearfix">
+<div class="content-width xs-mx-auto xs-my3 xs-relative">
 
-	<div class="col xs-col-9 clearfix">
-		{% include main-col.html %}
-	</div>
+  <div class="xs-col-11 clearfix xs-relative">
+  	<div class="col xs-col-9 xs-px2 clearfix">
+  		{% include feed2-main-col.html %}
+  	</div>
 
-	<div class="js-left-col col xs-col-3 xs-absolute xs-r0">
-		{% include left-col.html %}
-	</div>
-	<div class="js-right-col col xs-col-3 right-col-hide">
-		<div>{% include right-col.html %}</div>
-	</div>
+  	<div class="js-left-col col xs-col-3 xs-absolute xs-r0">
+  		{% include left-col.html %}
+  	</div>
+
+  	<div class="js-right-col col xs-col-3 right-col-hide">
+  		<div>{% include right-col.html %}</div>
+  	</div>
+  </div>
 
 
 </div>
